@@ -5,12 +5,17 @@ Check if the given string is a correct variable name.
 */
 
 function variableName(name) {
-    //Return early if first character is a digit or a space
-    if(name.charCodeAt(0) > 47 && name.charCodeAt(0) < 58 || name[0] === " ") return false;
-    
-    //Make sure all other characters are alphanumeric or underscores
-    for(let i = 1; i < name.length; i++) {
+    //Make sure characters are alphanumeric or underscores
+    for(let i = 0; i < name.length; i++) {
+        
         let code = name.charCodeAt(i);
+        
+        //See if first character is a number. 
+        if(i === 0) {
+            if(code > 47 && code < 58) return false;
+        }
+        
+        //Check all other cases.
         if(!(code > 64 && code < 91) && 
         !(code > 96 && code < 123) && 
         !(code > 47 && code < 58) &&
@@ -21,3 +26,4 @@ function variableName(name) {
     
     return true;
 }
+
