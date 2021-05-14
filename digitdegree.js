@@ -8,6 +8,7 @@ function digitDegree(n) {
     //Copy string representation of this number.
     let currentNumber = String(n);
     let iterations = 0;
+    //Iteratively split the number into digits, add them together, and see if this new number is one digit.
     while(currentNumber.length > 1) {
         iterations++;
         let digitArray = currentNumber.split("");
