@@ -4,7 +4,7 @@ Given integers n, l and r, find the number of ways to represent n as a sum of tw
 
 function countSumOfTwoRepresentations2(n, l, r) {
     //Keep track of number of working sums.
-    count = 0;
+    let count = 0;
     //Check if l or r are too large/small and adjust them if needed.
     if(l + r < n) {
         l = n - r;

@@ -18,5 +18,5 @@ function almostIncreasingSequence(sequence) {
           }
       }
     return true; 
-  }
+}
   
