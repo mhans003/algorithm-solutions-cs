@@ -76,5 +76,5 @@ function holiday(x, weekDay, month, yearNumber) {
         (isLeap && month === "February" && dateOfHoliday === 29) ? 
         dateOfHoliday :
         -1;
-    }
+}
     

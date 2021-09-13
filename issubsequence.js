@@ -10,5 +10,5 @@ function isSubsequence(t, s) {
     }
     var re = new RegExp(pattern);
     return re.test(t);
-  }
+}
   

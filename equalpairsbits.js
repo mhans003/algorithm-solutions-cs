@@ -28,5 +28,5 @@ function equalPairOfBits(n, m) {
         return value;
     })[0]
     ;
-  }
+}
   

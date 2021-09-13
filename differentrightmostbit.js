@@ -36,5 +36,5 @@ function differentRightmostBit(n, m) {
         }
     })
     ));
-  }
+}
   

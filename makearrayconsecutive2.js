@@ -27,7 +27,6 @@ function makeArrayConsecutive2(statues) {
      
     }
     
-    return missing; 
-    
- }
+    return missing;  
+}
  

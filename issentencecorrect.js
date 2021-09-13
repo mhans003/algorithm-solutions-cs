@@ -13,4 +13,4 @@ function isSentenceCorrect(sentence) {
     //[.?!]& searches for ending punctuation at the end of the string.
     var re = new RegExp(`^[A-Z][^.?!]*[.?!]$`);
     return re.test(sentence);
-  }
+}

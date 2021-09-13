@@ -34,4 +34,4 @@ function digitDifferenceSort(a) {
     }
     
     return differenceArray;
- }
+}
