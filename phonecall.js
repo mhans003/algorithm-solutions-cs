@@ -9,7 +9,7 @@ You have s cents on your account before the call. What is the duration of the lo
 
 function phoneCall(min1, min2_10, min11, s) {    
     let centsLeft = s;
-    totalMinutes = 0;
+    let totalMinutes = 0;
     
     //Purchase first minute.
     if(centsLeft - min1 >= 0) {
