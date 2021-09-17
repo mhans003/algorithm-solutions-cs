@@ -7,7 +7,7 @@ A 1-interesting polygon is just a square with a side of length 1. An n-interesti
 function shapeArea(n) {
     let area = 1; 
     
-    for(i = 1; i < n; i++) {
+    for(let i = 1; i < n; i++) {
         area += (4 * i); 
     }
     

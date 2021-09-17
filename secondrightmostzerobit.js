@@ -23,5 +23,5 @@ function secondRightmostZeroBit(n) {
           .join("")
           .substring(n.toString(2).split("").reverse().join("").indexOf("0") + 1)
           .indexOf("0"));
-  }
+}
   
