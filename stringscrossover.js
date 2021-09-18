@@ -28,7 +28,6 @@ function stringsCrossover(inputArray, result) {
             }
             //If this is a true match, add one to the overall count and continue.
             if(valid) {
-                console.log(`Valid pair: ${inputArray[i]} and ${inputArray[j]}`)
                 count++;
             }        
         }
