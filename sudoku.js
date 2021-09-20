@@ -1,3 +1,7 @@
+/*
+Added instructions to Sudoku
+*/
+
 function sudoku(grid) {
     let valid = true;
     //Test the rows.
