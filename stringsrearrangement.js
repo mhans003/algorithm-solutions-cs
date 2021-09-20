@@ -11,20 +11,14 @@ function stringsRearrangement(inputArray) {
             //When this is first called, 'm' is an empty array.
             if(inputArr.length === 0) {
                 //Once the array is empty, we know we are ready to 'unwind' recursion.
-                //console.log(`UNWIND: push m (${m}) into permutations(${permutations})`);
                 permutations.push(m);
             } else {
                 //Loop through every string element in the array.
                 for(let i = 0; i < inputArr.length; i++) {
-                    //console.log(`Starting with element ${i}`)
                     //Take a copy of the current array
                     let currentArray = inputArr.slice();
                     //Take out an element from the array and save it.
                     let nextElement = currentArray.splice(i, 1);
-                    //console.log(`currentArray: ${currentArray}`);
-                    //console.log(`nextElement: ${nextElement}`);
-                    //Recursively call this function, creating a passed in copy and appending the element removed from the copy from this iteration.
-                    //console.log(`Recursive call to permutation with currentArray and nextElement concatenated to m (${m})`)
                     permutation(currentArray.slice(), m.concat(nextElement));
                 }
             }
@@ -33,8 +27,6 @@ function stringsRearrangement(inputArray) {
         
         return permutations;
     };
-    
-    //console.log(createPermutations(inputArray));
     
     let allPermutations = createPermutations(inputArray);
     
