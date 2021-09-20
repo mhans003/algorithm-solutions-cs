@@ -34,7 +34,6 @@ function stringsRearrangement(inputArray) {
     
     for(let i = 0; i < allPermutations.length; i++) {
         //Loop through every string in this permutation
-        console.log(`Looping through permutation ${allPermutations[i]}`)
         for(let j = 0; j < allPermutations[i].length - 1; j++) {
             //Compare the characters in the string at this index (j) to the characters in the string at the next index (j + 1), and keep track of how many differences there are.
             let differences = 0;
