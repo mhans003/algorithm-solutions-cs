@@ -16,4 +16,4 @@ function swapAdjacentWords(s) {
         //return the sentence joined together after swaps.
         return words.join(" ");
     });
-  }
+}
