@@ -86,5 +86,5 @@ function swapAdjacentBits(n) {
           return currentValue === 1 ? parseInt(currentTotal += (2 ** (index))) : parseInt(currentTotal);
       })
     );
-  }
+}
   
