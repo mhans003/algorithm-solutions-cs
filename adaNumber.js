@@ -11,7 +11,6 @@ Note: this is how integer numbers are represented in the programming language Ad
 */
 
 function adaNumber(line) {
-    console.log("testing update name")
     //Helper function to see if chars in number part of string are valid in this base.
     const checkChar = (base, str) => {
         for(let i = 0; i < str.length; i++) {
