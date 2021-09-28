@@ -3,7 +3,6 @@ Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 */
 
 function addBorder(picture) {
-    console.log("test change name for addBorder")
     picture.forEach((string, index) => {
         picture[index] = "*" + string + "*";
     });
