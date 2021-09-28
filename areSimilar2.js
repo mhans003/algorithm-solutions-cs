@@ -5,6 +5,7 @@ Given two arrays a and b, check whether they are similar.
 */
 
 function areSimilar2(a, b) {
+    console.log("test rename areSimilar2")
     //Helper function to see if arrays are equal.
     const arrayCheck = (arr1, arr2) => {
         for(let i = 0; i < arr1.length; i++) {
