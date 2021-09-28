@@ -4,7 +4,7 @@ Two arrays are called similar if one can be obtained from another by swapping at
 Given two arrays a and b, check whether they are similar.
 */
 
-function areSimilar(a, b) {
+function areSimilar2(a, b) {
     //Helper function to see if arrays are equal.
     const arrayCheck = (arr1, arr2) => {
         for(let i = 0; i < arr1.length; i++) {
