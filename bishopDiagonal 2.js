@@ -16,6 +16,7 @@ function bishopDiagonal(bishop1, bishop2) {
         let bishop = bishopInput;
         while((bishop[0] > "a" && bishop[0]) < "h" &&
         (bishop[1] > 1 && bishop[1] < 8)) {
+            console.log("In a loop")
             //Update letter
             bishop = letter === "add" ? 
             String.fromCharCode(bishop.charCodeAt(0) + 1) + bishop[1] :
