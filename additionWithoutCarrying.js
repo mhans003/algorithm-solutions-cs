@@ -16,7 +16,6 @@ function additionWithoutCarrying(param1, param2) {
     for(let i = 0; i < length; i++) {
         let addend1 = num1[i] ? Number(num1[i]) : 0;
         let addend2 = num2[i] ? Number(num2[i]) : 0;
-        console.log(addend1, addend2)
         sum.unshift((addend1 + addend2) % 10);
     }
     //Put the array back together and return as a number.
