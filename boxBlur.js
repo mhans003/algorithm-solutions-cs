@@ -24,7 +24,6 @@ function boxBlur(image) {
                 //Count the squares.
                 for(let j_prime = j; j_prime <= j + 2; j_prime++) {
                     total += image[i_prime][j_prime];
-                    console.log(`total with ${image[i_prime][j_prime]} is now ${total}`);
                 }
             }
             //Push this row to the array.
