@@ -65,7 +65,7 @@ var romanToInt = function(s) {
         let num = "";
         if(s[startingIndex] === 'C') {
             //See if this is 1, 2, 3, 4, or 9 hundred.
-            num = s[startingIndex + 2] === 'C' ?
+            num = s[startingIndex + 2] === 'C' && s[startingIndex + 1] === 'C' ?
                 300 :
                 s[startingIndex + 1] === 'C' ?
                 200 :
@@ -76,9 +76,9 @@ var romanToInt = function(s) {
                 100;
         } else if(s[startingIndex] === 'D') {
             //See if this is 5, 6, 7, or 8 hundred.
-            num = s[startingIndex + 3] === 'C' ?
+            num = s[startingIndex + 3] === 'C' && s[startingIndex + 2] === 'C' && s[startingIndex + 1] === 'C' ?
                 800 :
-                s[startingIndex + 2] === 'C' ?
+                s[startingIndex + 2] === 'C' && s[startingIndex + 1] === 'C' ?
                 700 :
                 s[startingIndex + 1] === 'C' ?
                 600 :
@@ -101,7 +101,7 @@ var romanToInt = function(s) {
         //See what ten this is
         let num = "";
         if(s[startingIndex] === 'X') {
-            num = s[startingIndex + 2] === 'X' ?
+            num = s[startingIndex + 2] === 'X' && s[startingIndex + 1] === 'X'?
                 30 :
                 s[startingIndex + 1] === 'X' ?
                 20 :
@@ -111,9 +111,9 @@ var romanToInt = function(s) {
                 90 :
                 10;
         } else if(s[startingIndex] === 'L') {
-            num = s[startingIndex + 3] === 'X' ?
+            num = s[startingIndex + 3] === 'X' && s[startingIndex + 2] === 'X' && s[startingIndex + 1] === 'X'?
                 80 :
-                s[startingIndex + 2] === 'X' ?
+                s[startingIndex + 2] === 'X' && s[startingIndex + 1] === 'X' ?
                 70 :
                 s[startingIndex + 1] === 'X' ?
                 60 :
