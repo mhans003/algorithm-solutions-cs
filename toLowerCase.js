@@ -1,6 +1,7 @@
-//Given a string s, return the string after replacing every uppercase letter with the same lowercase letter.
-
-//THIS SOLUTION DOES NOT USE BUILT-IN toLowerCase()
+/*
+Given a string s, return the string after replacing every uppercase letter with the same lowercase letter.
+THIS SOLUTION DOES NOT USE BUILT-IN toLowerCase()
+*/
 
 var toLowerCase = function(s) {
     //This solution does not use built-in toLowerCase.
