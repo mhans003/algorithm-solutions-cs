@@ -1,3 +1,5 @@
+//Generate all permutations of an array of integers
+
 function permutations(nums) {
     //Store the combinations of this array.
     let combinations = [];
