@@ -24,8 +24,6 @@ function permutations(nums) {
             //Combine the current number with this combination of the remaining elements
             const permutedArray = [currentNum, ...remainingNumsPermuted[j]];
 
-            //console.log("Combining " + currentNum + " with " + remainingNumsPermuted[j])
-
             //Save this combination
             combinations.push(permutedArray);
         }
